@@ -19,23 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 //Mobile.startExistingApplication(GlobalVariable.applicationID)
 
-Mobile.tap(findTestObject('BottomNavigation/trade'), 0)
+Mobile.tap(findTestObject('Object Repository/Trade/trade_Assets'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Trade/MarketOrder/trade_MarketOrder'), 0)
+Mobile.tap(findTestObject('Object Repository/Trade/ClosePosition/position'), 0)
 
-'關閉首進市價交易提示訊息'
-if (Mobile.waitForElementPresent(findTestObject('Object Repository/Trade/MarketOrder/marketOrder_Skip'), 3)) {
-    Mobile.tap(findTestObject('Object Repository/Trade/MarketOrder/marketOrder_Skip'), 0)
-}
+Mobile.tap(findTestObject('Object Repository/Trade/ClosePosition/firstPosition'), 0)
 
-'下拉選單'
-Mobile.tap(findTestObject('Object Repository/Trade/MarketOrder/marketOrder_Menu'), 0)
+Mobile.tap(findTestObject('Object Repository/Trade/ClosePosition/closePosition'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Trade/MarketOrder/USOil'), 0)
-
-'買漲'
-Mobile.tap(findTestObject('Trade/MarketOrder/marketOrder_Long'), 0)
-
-'查看持倉'
-Mobile.tap(findTestObject('Object Repository/Trade/MarketOrder/checkPosition'), 0)
+Mobile.tap(findTestObject('Object Repository/Trade/ClosePosition/closePosition_CheckPosition'), 0)
 
