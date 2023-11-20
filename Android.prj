@@ -6,6 +6,7 @@
    <UUID>e144a3e4-2394-4a20-9a9d-15afbcdc845a</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>D:\Fastwin\Android\Android.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
