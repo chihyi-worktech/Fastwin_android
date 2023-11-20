@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication(GlobalVariable.applicationID)
+//Mobile.startExistingApplication(GlobalVariable.applicationID)
 
 Mobile.tap(findTestObject('BottomNavigation/mine'), 0)
 

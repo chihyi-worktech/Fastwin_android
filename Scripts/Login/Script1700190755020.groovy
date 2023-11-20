@@ -44,9 +44,7 @@ Mobile.setText(findTestObject('Object Repository/Login/password'), GlobalVariabl
 Mobile.tap(findTestObject('Object Repository/Login/login'), 0)
 
 '關閉首次登錄提示'
-if(Mobile.waitForElementPresent(findTestObject('Object Repository/Login/firstLogin'), 3)) {
-	Mobile.tap(findTestObject('Object Repository/Login/firstLogin'), 0)
+if (Mobile.waitForElementPresent(findTestObject('Object Repository/Login/firstLogin'), 3)) {
+    Mobile.tap(findTestObject('Object Repository/Login/firstLogin'), 0)
 }
-
-Mobile.closeApplication()
 
