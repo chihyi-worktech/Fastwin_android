@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>SIT</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'com.profit.app'</initValue>
+      <name>applicationID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>MT4帳號</description>
+      <initValue>'950000267'</initValue>
+      <name>MT4Account</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>登錄密碼</description>
+      <initValue>'123456'</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

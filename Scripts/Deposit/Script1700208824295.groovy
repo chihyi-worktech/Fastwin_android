@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication(GlobalVariable.applicationID, FailureHandling.STOP_ON_FAILURE)
+//Mobile.startExistingApplication(GlobalVariable.applicationID, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('BottomNavigation/mine'), 0)
 
@@ -54,6 +54,22 @@ else if(Mobile.waitForElementPresent(findTestObject('Object Repository/Mine/Depo
 	'入金頁點擊確認'
 	Mobile.tap(findTestObject('Object Repository/Mine/Deposit/webview_Check'), 0)
 	System.out.println("使用渠道E提交入金申請");
+	'回到我的頁面'
+	Mobile.tap(findTestObject('Object Repository/Mine/Deposit/webview_Back'), 0)
+	Mobile.tap(findTestObject('Object Repository/Mine/Deposit/backtoMine'), 0)
+}
+
+else if(Mobile.waitForElementPresent(findTestObject('Object Repository/Mine/Deposit/SITPaymentText'), 3)) {
+	Mobile.tap(findTestObject('Object Repository/Mine/Deposit/SITChannel'), 0)
+	'設定最小入金金額'
+	amount="100";
+	Mobile.setText(findTestObject('Object Repository/Mine/Deposit/depositAmount'), amount, 0)
+	'提交入金申請'
+	Mobile.tap(findTestObject('Object Repository/Mine/Deposit/checkDeposit'), 0)
+	Mobile.tap(findTestObject('Object Repository/Mine/Deposit/second_CheckDeposit'), 0)
+	'點擊支付成功'
+	Mobile.tap(findTestObject('Object Repository/Mine/Deposit/SITPayment_Success'),0)
+	System.out.println("使用測試支付(SIT渠道)提交入金申請");
 	'回到我的頁面'
 	Mobile.tap(findTestObject('Object Repository/Mine/Deposit/webview_Back'), 0)
 	Mobile.tap(findTestObject('Object Repository/Mine/Deposit/backtoMine'), 0)

@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.tap(findTestObject('Object Repository/Trade/trade_Assets'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Trade/ClosePosition/position'), 0)
+Mobile.tap(findTestObject('Object Repository/Trade/Assets_position'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Trade/ClosePosition/firstPosition'), 0)
 
